@@ -56,63 +56,24 @@ const rules: KarabinerRules[] = [
     ],
   },
   ...createHyperSubLayers({
-    spacebar: open(
-      "raycast://extensions/stellate/mxstbr-commands/create-notion-todo"
-    ),
     // b = "B"rowse
     b: {
-      t: open("https://twitter.com"),
-      // Quarterly "P"lan
-      p: open("https://qrtr.ly/plan"),
-      y: open("https://news.ycombinator.com"),
-      f: open("https://facebook.com"),
-      r: open("https://reddit.com"),
+      u: open("https://youtube.com"),
+      j: open("https://github.com/damienbose"),
+      p: open("https://tweek.so"),
+
     },
     // o = "Open" applications
     o: {
-      1: app("1Password"),
-      g: app("Google Chrome"),
-      c: app("Notion Calendar"),
+      g: app("Microsoft Outlook"),
       v: app("Visual Studio Code"),
-      d: app("Discord"),
-      s: app("Slack"),
-      e: app("Superhuman"),
-      n: app("Notion"),
       t: app("Terminal"),
-      // Open todo list managed via *H*ypersonic
-      h: open(
-        "notion://www.notion.so/stellatehq/7b33b924746647499d906c55f89d5026"
-      ),
       z: app("zoom.us"),
-      // "M"arkdown (Obsidian.md)
       m: app("Obsidian"),
       f: app("Finder"),
-      r: app("Texts"),
-      // "i"Message
-      i: app("Texts"),
+      r: app("WhatsApp"),
       p: app("Spotify"),
-      a: app("iA Presenter"),
-      // "W"hatsApp has been replaced by Texts
-      w: open("Texts"),
-      l: open(
-        "raycast://extensions/stellate/mxstbr-commands/open-mxs-is-shortlink"
-      ),
     },
-
-    // TODO: This doesn't quite work yet.
-    // l = "Layouts" via Raycast's custom window management
-    // l: {
-    //   // Coding layout
-    //   c: shell`
-    //     open -a "Visual Studio Code.app"
-    //     sleep 0.2
-    //     open -g "raycast://customWindowManagementCommand?position=topLeft&relativeWidth=0.5"
-
-    //     open -a "Terminal.app"
-    //     sleep 0.2
-    //     open -g "raycast://customWindowManagementCommand?position=topRight&relativeWidth=0.5"
-    //   `,
-    // },
 
     // w = "Window" via rectangle.app
     w: {
