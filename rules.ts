@@ -66,6 +66,7 @@ const rules: KarabinerRules[] = [
     // o = "Open" applications
     o: {
       g: app("Microsoft Outlook"), // "G"mail
+      w: app("Microsoft Word"), // "W"ord
       c: app("Google Chrome"), // "C"hrome
       v: app("Visual Studio Code"), // "V"isual Studio Code
       t: app("Terminal"), // "T"erminal
