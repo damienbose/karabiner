@@ -38,42 +38,42 @@ const rules: KarabinerRules[] = [
         ],
         type: "basic",
       },
-      //      {
-      //        type: "basic",
-      //        description: "Disable CMD + Tab to force Hyper Key usage",
-      //        from: {
-      //          key_code: "tab",
-      //          modifiers: {
-      //            mandatory: ["left_command"],
-      //          },
-      //        },
-      //        to: [
-      //          {
-      //            key_code: "tab",
-      //          },
-      //        ],
-      //      },
+      {
+        type: "basic",
+        description: "Disable CMD + Tab to force Hyper Key usage",
+        from: {
+          key_code: "tab",
+          modifiers: {
+            mandatory: ["left_command"],
+          },
+        },
+        to: [
+          {
+            key_code: "tab",
+          },
+        ],
+      },
     ],
   },
   ...createHyperSubLayers({
     // b = "B"rowse
     b: {
-      u: open("https://youtube.com"),
-      j: open("https://github.com/damienbose"),
-      p: open("https://tweek.so"),
+      u: open("https://youtube.com"), // "U"tube
+      j: open("https://github.com/damienbose"), // "J"ira
+      p: open("https://tweek.so"), // "P"lanner
 
     },
     // o = "Open" applications
     o: {
-      g: app("Microsoft Outlook"),
-      c: app("Google Chrome"),
-      v: app("Visual Studio Code"),
-      t: app("Terminal"),
-      z: app("zoom.us"),
-      m: app("Obsidian"),
-      f: app("Finder"),
-      r: app("WhatsApp"),
-      p: app("Spotify"),
+      g: app("Microsoft Outlook"), // "G"mail
+      c: app("Google Chrome"), // "C"hrome
+      v: app("Visual Studio Code"), // "V"isual Studio Code
+      t: app("Terminal"), // "T"erminal
+      z: app("zoom.us"), // "Z"oom
+      m: app("Obsidian"), // "M"arkdown
+      f: app("Finder"), // "F"inder
+      r: app("WhatsApp"), // "R"eact
+      s: app("Spotify"), // "S"potify
     },
 
     // w = "Window" via rectangle.app
