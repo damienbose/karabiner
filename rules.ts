@@ -96,9 +96,9 @@ const rules: KarabinerRules[] = [
       s: app("Spotify"), // "S"potify
     },
 
-    // v = "moVe" which isn't "m" because we want it to be on the left hand
+    // Find for arrows 
     // so that hjkl work like they do in vim
-    v: {
+    f: {
       h: {
         to: [{ key_code: "left_arrow" }],
       },
@@ -111,8 +111,8 @@ const rules: KarabinerRules[] = [
       l: {
         to: [{ key_code: "right_arrow" }],
       },
-      },
     },
+  },
   ),
 ];
 
