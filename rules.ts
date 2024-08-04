@@ -108,7 +108,9 @@ const rules: KarabinerRules[] = [
       k: {
         to: [{ key_code: "up_arrow" }],
       },
-
+      l: {
+        to: [{ key_code: "right_arrow" }],
+      },
       },
     },
   ),
