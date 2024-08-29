@@ -58,30 +58,23 @@ const rules: KarabinerRules[] = [
         ],
         type: "basic",
       },
-      // {
-      //   type: "basic",
-      //   description: "Disable CMD + Tab to force Hyper Key usage",
-      //   from: {
-      //     key_code: "tab",
-      //     modifiers: {
-      //       mandatory: ["left_command"],
-      //     },
-      //   },
-      //   to: [
-      //     {
-      //       key_code: "tab",
-      //     },
-      //   ],
-      // },
     ],
   },
   ...createHyperSubLayers({
-    // b = "B"rowse
-    b: {
-      u: open("https://youtube.com"), // "U"tube
-      j: open("https://github.com/damienbose"), // "J"ira
-      p: open("https://tweek.so"), // "P"lanner
+    // "Use arrow keys"
+    h: {
+      to: [{ key_code: "left_arrow" }],
     },
+    j: {
+      to: [{ key_code: "down_arrow" }],
+    },
+    k: {
+      to: [{ key_code: "up_arrow" }],
+    },
+    l: {
+      to: [{ key_code: "right_arrow" }],
+    },
+
     // o = "Open" applications
     o: {
       g: app("Microsoft Outlook"), // "G"mail
@@ -96,22 +89,6 @@ const rules: KarabinerRules[] = [
       s: app("Spotify"), // "S"potify
     },
 
-    // Find for arrows 
-    // so that hjkl work like they do in vim
-    f: {
-      h: {
-        to: [{ key_code: "left_arrow" }],
-      },
-      j: {
-        to: [{ key_code: "down_arrow" }],
-      },
-      k: {
-        to: [{ key_code: "up_arrow" }],
-      },
-      l: {
-        to: [{ key_code: "right_arrow" }],
-      },
-    },
   },
   ),
 ];
