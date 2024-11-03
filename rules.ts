@@ -36,6 +36,26 @@ const rules: KarabinerRules[] = [
     ]
   },
   {
+    description: "Make escape caps lock key",
+    manipulators: [
+      {
+        description: "Escape -> Caps Lock",
+        from: {
+          key_code: "escape",
+          modifiers: {
+            optional: ["any"],
+          },
+        },
+        to: [
+          {
+            key_code: "caps_lock"
+          },
+        ],
+        type: "basic",
+      },
+    ],
+  },
+  {
     description: "Make caps lock escape and control",
     manipulators: [
       {
@@ -87,6 +107,7 @@ const rules: KarabinerRules[] = [
       f: app("Finder"), // "F"inder
       r: app("WhatsApp"), // "R"eact
       s: app("Spotify"), // "S"potify
+      e: app("Notes"), // "E"dit
     },
 
   },
