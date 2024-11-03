@@ -36,12 +36,12 @@ const rules: KarabinerRules[] = [
     ]
   },
   {
-    description: "Make escape caps lock key",
+    description: "Make non_us_backslash caps lock",
     manipulators: [
       {
-        description: "Escape -> Caps Lock",
+        description: "non_us_backslash -> Caps Lock",
         from: {
-          key_code: "escape",
+          key_code: "non_us_backslash",
           modifiers: {
             optional: ["any"],
           },
