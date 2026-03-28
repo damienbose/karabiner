@@ -97,17 +97,15 @@ const rules: KarabinerRules[] = [
 
     // o = "Open" applications
     o: {
-      g: app("Mail"), // "G"mail
-      s: app("Calendar"), // "S"potify
-      w: app("Microsoft Word"), // "W"ord
-      c: app("Google Chrome"), // "C"hrome
-      v: app("Visual Studio Code"), // "V"isual Studio Code
-      t: app("iTerm"), // "T"erminal
-      z: app("zoom.us"), // "Z"oom
-      e: app("Obsidian"), // "M"arkdown
-      f: app("Finder"), // "F"inder
-      r: app("WhatsApp"), // "R"eact
-      // e: app("Notes"), // "E"dit
+      g: app("Microsoft Outlook"),
+      w: app("Microsoft Word"),
+      c: app("Google Chrome"),
+      v: app("Visual Studio Code"),
+      t: app("iTerm"),
+      z: app("zoom.us"),
+      e: app("Obsidian"),
+      f: app("Finder"),
+      r: app("WhatsApp"),
     },
 
   },
